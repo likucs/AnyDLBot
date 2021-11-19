@@ -58,7 +58,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton('🤖 Update Channel', url='https://t.me/cs_cloud'),
                                         InlineKeyboardButton('About', url='https://t.me/about_cs')
                                     ],[
-                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/ZauteKm/AnyDLBot'),
+                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/iAmLiKu1/AnyDLBot'),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -85,7 +85,7 @@ Just send a Youtube, Pornhub or Xhamster video url to download it in video or au
                                         InlineKeyboardButton('🤖 Update Channel', url='https://t.me/cs_cloud'),
                                         InlineKeyboardButton('About', url='https://t.me/about_cs')
                                     ],[
-                                        InlineKeyboardButton("🔻 Source Code -GitHub🔻", url="https://github.com/ZauteKm/AnyDLBot"),
+                                        InlineKeyboardButton("🔻 Source Code -GitHub🔻", url="https://github.com/iAmLiKu1/AnyDLBot"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -98,19 +98,19 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b><u>About AnyDLBot!</u></b>
 
-<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/ZauteKm">Zaute Km</a>
+<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/iAmLiKu1">Liku cs</a>
 
 <b>▷ 📚 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>▷ 📢 Channel:</b> @TGBotsProJect
+<b>▷ 📢 Channel:</b> @cs_cloud
 
-<b>▷ 🌀 Source Code:</b> <a href="https://github.com/ZauteKm/AnyDLBot">GitHub</a>""",
+<b>▷ 🌀 Source Code:</b> <a href="https://github.com/likucs/AnyDLBot">GitHub</a>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "🔙 Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Credit ❤️", url="https://t.me/ZauteBot"),
+                                            "Credit ❤️", url="https://t.me/iAmLiKu1"),
                                   ],[
                                         InlineKeyboardButton('🧑‍🔧 Owner', url='https://t.me/iAmLiKu1'),
                                         InlineKeyboardButton('🤖 Update Channel', url='https://t.me/cs_cloud'),
