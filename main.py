@@ -45,7 +45,7 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDLBot
 
-I can download video or audio from Youtube, Pornhub and Xhamster 🌝. \n\nMade by @iAmliKu1.
+I can download video or audio from Youtube, Pornhub and Xhamster. \n\nMade by @iAmLiKu1.
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -58,7 +58,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton('🤖 Update Channel', url='https://t.me/cs_cloud'),
                                         InlineKeyboardButton('About', url='https://t.me/about_cs')
                                     ],[
-                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/likucs/AnyDLBot'),
+                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/ZauteKm/AnyDLBot'),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -73,7 +73,7 @@ async def help(client, message):
 
 Just send a Youtube, Pornhub or Xhamster video url to download it in video or audio format!
 
-<b> ▷MᴀɪɴᴛᴀɪɴᴇD By :</b> @iAmLiKu1""",
+<b>▷ Please Join :</b> @TGBotsProJect""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -98,13 +98,13 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b><u>About AnyDLBot!</u></b>
 
-<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/iAmLiKu1">Liku Cs</a>
+<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/ZauteKm">Zaute Km</a>
 
 <b>▷ 📚 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>▷ 📢 Channel:</b> @cs_cloud
+<b>▷ 📢 Channel:</b> @TGBotsProJect
 
-<b>▷ 🌀 Source Code:</b> <a href="https://github.com/likucs/AnyDLBot">GitHub</a>""",
+<b>▷ 🌀 Source Code:</b> <a href="https://github.com/ZauteKm/AnyDLBot">GitHub</a>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -129,9 +129,41 @@ async def about(client, message):
                    & filters.text
                    & ~filters.edited
                    & filters.regex(YTDL_REGEX))
-async def ytdl_with_button(_, message: Message):
+async def ytdl_with_button(c: Client, message: Message):
+    if Config.UPDATES_CHANNEL is not None:
+        try:
+            user = await c.get_chat_member(Config.UPDATES_CHANNEL, message.chat.id)
+            if user.status == "kicked":
+                await c.send_message(
+                    chat_id=message.chat.id,
+                    text="Sorry, You are Banned to use me. Contact my [master](https://t.me/iAmLiKu1).",
+                    parse_mode="markdown",
+                    disable_web_page_preview=True
+                )
+                return
+        except UserNotParticipant:
+            await c.send_message(
+                chat_id=message.chat.id,
+                text="**Please Join My Updates Channel to use me 😉**",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{Config.UPDATES_CHANNEL}")
+                        ]
+                    ]
+                ),
+                parse_mode="markdown"
+            )
+            return
+        except Exception:
+            await c.send_message(
+                chat_id=message.chat.id,
+                text="Something went Wrong. Contact my [master](https://t.me/iAmLiKu1).",
+                parse_mode="markdown",
+                disable_web_page_preview=True)
+            return
     await message.reply_text(
-        "**Choose download type👇**",
+        "**Choose Download type👇**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
