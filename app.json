@@ -9,7 +9,7 @@
         "TGBotsProJect"
     ],
     "website": "https://telegram.dog/TGBotsProJect",
-    "repository": "https://github.com/ZauteKm/AnyDLBot",
+    "repository": "https://github.com/likucs/AnyDLBot",
     "success_url": "https://t.me/BotzListBot",
     "env": {
         "TG_BOT_TOKEN": {
