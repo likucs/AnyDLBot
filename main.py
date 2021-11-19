@@ -54,11 +54,11 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton('🙆🏻‍♂️ Help', callback_data="help"),
                                         InlineKeyboardButton('Feedback 👥', url='https://telegram.me/zautebot')
                                     ],[
-                                        InlineKeyboardButton('🧑‍🔧 Owner', url='https://t.me/ZauteKm'),
-                                        InlineKeyboardButton('🤖 Bot Lists', url='https://t.me/BotzListBot'),
-                                        InlineKeyboardButton('Channel 📢', url='https://t.me/TGBotsProJect')
+                                        InlineKeyboardButton('🧑‍🔧 Owner', url='https://t.me/iAmLiKu1'),
+                                        InlineKeyboardButton('🤖 Update Channel', url='https://t.me/cs_cloud'),
+                                        InlineKeyboardButton('About', url='https://t.me/about_cs')
                                     ],[
-                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/ZauteKm/AnyDLBot'),
+                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/likucs/AnyDLBot'),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -81,9 +81,9 @@ Just send a Youtube, Pornhub or Xhamster video url to download it in video or au
                                         InlineKeyboardButton(
                                             "About 🙄", callback_data="about"),
                                   ],[
-                                        InlineKeyboardButton("🧑‍🔧 Owner", url="https://t.me/ZauteKm"),
-                                        InlineKeyboardButton("🤖 Bot Lists", url="https://t.me/BotzListBot"),
-                                        InlineKeyboardButton('Channel 📢', url="https://t.me/TGBotsProJect")
+                                        InlineKeyboardButton('🧑‍🔧 Owner', url='https://t.me/iAmLiKu1'),
+                                        InlineKeyboardButton('🤖 Update Channel', url='https://t.me/cs_cloud'),
+                                        InlineKeyboardButton('About', url='https://t.me/about_cs')
                                     ],[
                                         InlineKeyboardButton("🔻 Source Code -GitHub🔻", url="https://github.com/ZauteKm/AnyDLBot"),
                                     ]]
@@ -98,13 +98,13 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b><u>About AnyDLBot!</u></b>
 
-<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/ZauteKm">Zaute Km</a>
+<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/iAmLiKu1">Liku Cs</a>
 
 <b>▷ 📚 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>▷ 📢 Channel:</b> @TGBotsProJect
+<b>▷ 📢 Channel:</b> @cs_cloud
 
-<b>▷ 🌀 Source Code:</b> <a href="https://github.com/ZauteKm/AnyDLBot">GitHub</a>""",
+<b>▷ 🌀 Source Code:</b> <a href="https://github.com/likucs/AnyDLBot">GitHub</a>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -112,11 +112,11 @@ async def about(client, message):
                                         InlineKeyboardButton(
                                             "Credit ❤️", url="https://t.me/ZauteBot"),
                                   ],[
-                                        InlineKeyboardButton("🧑‍🔧 Onwer", url="https://t.me/ZauteKm"),
-                                        InlineKeyboardButton("🤖 Bot Lists", url="https://t.me/BotzListBot"),
-                                        InlineKeyboardButton('Channel 📢', url="https://t.me/TGBotsProJect")
+                                        InlineKeyboardButton('🧑‍🔧 Owner', url='https://t.me/iAmLiKu1'),
+                                        InlineKeyboardButton('🤖 Update Channel', url='https://t.me/cs_cloud'),
+                                        InlineKeyboardButton('About', url='https://t.me/about_cs')
                                     ],[
-                                        InlineKeyboardButton("🔻 Source Code -GitHub 🔻", url="https://github.com/ZauteKm/AnyDLBot"),
+                                        InlineKeyboardButton("🔻 Source Code -GitHub 🔻", url="https://github.com/likucs/AnyDLBot"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -345,7 +345,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @TGBotsProJect
+Join @cs_cloud
 """
 )
 
