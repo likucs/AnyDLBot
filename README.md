@@ -25,4 +25,4 @@ Press the button Deploy to heroku and give the values for the config vars. 👇
 
 ### Developers:
 
-- <a href="https://t.me/iAmLiKu1"><img src="https://img.shields.io/badge/Zaute-Km-blue.svg?logo=telegram"></a>
+- <a href="https://t.me/iAmLiKu1"><img src="https://img.shields.io/badge/Liku-Cs-blue.svg?logo=telegram"></a>
