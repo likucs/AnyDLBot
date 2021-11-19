@@ -1,5 +1,5 @@
 echo "Cloning Repo...."
-git clone https://github.com/ZauteKm/AnyDLBot.git /AnyDLBot
+git clone https://github.com/likucs/AnyDLBot.git /AnyDLBot
 cd /AnyDLBot
 pip3 install -r requirements.txt
 echo "Starting Bot...."
