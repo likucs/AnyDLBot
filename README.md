@@ -17,7 +17,7 @@
 ### Deploy to Heroku 😎
 Press the button Deploy to heroku and give the values for the config vars. 👇
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZauteKm/AnyDLBot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/likucs/AnyDLBot)
 
 ### Credits
 
@@ -25,4 +25,4 @@ Press the button Deploy to heroku and give the values for the config vars. 👇
 
 ### Developers:
 
-- <a href="https://t.me/iZaute/6"><img src="https://img.shields.io/badge/Zaute-Km-blue.svg?logo=telegram"></a>
+- <a href="https://t.me/iAmLiKu1"><img src="https://img.shields.io/badge/Zaute-Km-blue.svg?logo=telegram"></a>
